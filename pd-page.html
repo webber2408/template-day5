@@ -1,0 +1,77 @@
+<html>
+<head>
+<title>Template</title>
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src=""></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="css/style1.css">
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<div class="container-fluid main-container">
+ 	<div class="row header-row">
+ 	<!-- header row -->
+ 			<div class="col-xs-12 col-md-12 col-lg-12 h-col">
+	 				<nav class="navbar navbar-default">
+	                <div class="container">
+	                  <div class="navbar-header">
+	                    <a href="#" class="navbar-brand">Kick-Kart</a>
+	                    <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mydropdown">
+	                    <span class="icon-bar"></span>
+	                    <span class="icon-bar"></span>
+	                    <span class="icon-bar"></span>
+	                    </button>
+	                  </div>
+	                  <div class="collapse navbar-collapse" id="mydropdown">
+		                  <ul class="nav navbar-nav">
+		                  <li><a href="#">About</a></li>
+		                  <li class="active"><a href="#">Login</a></li>
+		                  <li><a href="#">Signup</a></li>
+		                  <li><a href="#">Contact Us</a></li>
+		                  </ul>
+	                  </div>
+	                </div>
+	             </nav>
+	             <script>
+	               $(".nav li").on("click",function(){
+	                      $(".nav li").removeClass("active");
+	                      $(this).addClass("active");
+	               });
+	           </script>
+ 			</div>
+ 	</div>
+ 	<div class="row main-row">
+ 	<!-- main class row -->
+	 	<div class="col-xs-12  col-sm-4 col-md-4 col-lg-4 main-left">
+	 	     <div class="m-l-top">
+	 	     <img src="images/product.jpg" width="200px" height="200px">
+	 	     </div>
+	 	</div>
+
+	 	<div class="col-xs-12  col-sm-8 col-md-8 col-lg-8 main-right">
+            <div class="container-fluid">
+                <div class="row m-r-row-1">
+                  <p id="cdate"><b><u>Timer :</u></b></p>
+                  <p><b><u>Product Quantity :</u></b></p>
+	             </div>       
+
+                <div class="row m-r-row-2">
+                   <button class="btn btn-primary btn1"><b>Buy Now</b></button>
+                </div>
+
+            </div>
+	 	</div>
+ 	</div>
+</div>
+<script>
+document.getElementById("cdate").innerHTML = Date();
+</script>
+</body>
+</html>
